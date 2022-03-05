@@ -151,7 +151,7 @@ impl VBox {
         match self.count {
             Some(v) => v,
             None => {
-                panic!("Count not calced??")
+                panic!("Count not calced?")
             }
         }
     }
@@ -167,7 +167,7 @@ impl VBox {
         match self.volume {
             Some(v) => v,
             None => {
-                panic!("Volume not yet computed??")
+                panic!("Volume not yet computed?")
             }
         }
     }

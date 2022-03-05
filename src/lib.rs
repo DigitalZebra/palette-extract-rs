@@ -20,8 +20,8 @@ impl Default for Quality {
 pub struct MaxColors(u8);
 
 impl MaxColors {
-    pub fn new(quality: u8) -> MaxColors {
-        MaxColors(quality)
+    pub fn new(max_colors: u8) -> MaxColors {
+        MaxColors(max_colors)
     }
 }
 

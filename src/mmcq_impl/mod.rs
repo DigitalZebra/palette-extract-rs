@@ -6,29 +6,16 @@ mod util;
 mod vbox;
 
 pub use types::Color;
-
 pub use pixel_encoding::PixelEncoding;
 
 use std::cmp::{self, Ordering};
 
 use histogram::create_histogram_and_vbox;
-
 use config::{FRACTION_BY_POPULATION, MAX_ITERATIONS, VBOX_LENGTH};
 use util::color_index_from;
 use vbox::VBox;
+use types::ColorChannel;
 
-use self::types::ColorChannel;
-
-
-/*
- * TODO:
- *  0. Find/fix other bugs, create more test cases, specifically the air fryer test...?
- *  2. Lazily compute avg/volume again, as right now computing it more frequently than needed
- *  3. Find other optimizations
- *  4. Clean up APIs, follow Rust cargo guide
- *  5. Move in to own repo
- *  6. Publish!
- */
 pub fn extract_colors(
     pixels: &[u8],
     encoding: PixelEncoding,
