@@ -1,2 +1,2 @@
 # rust-mmcq
-Rust implementation of modified median cut quantization 
+Rust implementation of modified median cut quantization.
