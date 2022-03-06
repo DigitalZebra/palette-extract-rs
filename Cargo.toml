@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 keywords = ["mmcq", "color", "quantization", "image", "palette"]
 description = "A Rust port of Leptonica's modified media cut quantization algorithm"
-repository = "https://github.com/DigitalZebra/palette-extract-rs.git
+repository = "https://github.com/DigitalZebra/palette-extract-rs.git"
 homepage = "https://github.com/DigitalZebra/palette-extract-rs"
 
 [dev-dependencies]
