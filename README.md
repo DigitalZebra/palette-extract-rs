@@ -5,7 +5,7 @@ Based on a port of [Leptonica's](http://www.leptonica.org/) **m**odified **m**ed
 
 
 ### Example
-<img src="examples/test_images/zebra.jpg" alt="drawing" width="648"/>
+<img src="examples/test_images/zebra.jpg" alt="drawing" width="648"/>[^1]
 
 ![color1](https://via.placeholder.com/72/7E8565/7E8565?text=+)
 ![color2](https://via.placeholder.com/72/18272C/18272C?text=+)
@@ -17,6 +17,7 @@ Based on a port of [Leptonica's](http://www.leptonica.org/) **m**odified **m**ed
 ![color8](https://via.placeholder.com/72/B2C5CC/B2C5CC?text=+)
 ![color9](https://via.placeholder.com/72/404B2B/404B2B?text=+)
 
+[^1]: Image credit: [João Pacheco](https://pixnio.com/fauna-animals/zebra-safari-animal-wildlife-savanna-equine)
 
 # Credits
 This Rust implementation of **m**odified **m**edian **c**ut **q**uantization (MMCQ) is adapted from Kazuki Ohara's [ColorThiefSwift](https://github.com/yamoridon/ColorThiefSwift).
