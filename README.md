@@ -1,8 +1,10 @@
-# rust-mmcq
-A Rust implementation of [Leptonica's](http://www.leptonica.org/) **m**odified **m**edian **c**ut **q**uantization.
+# palette-extract-rs
+A Rust lib for extracting a color palette from an image!
 
-Easily extract the color palette from an image!
+Based on a port of [Leptonica's](http://www.leptonica.org/) **m**odified **m**edian **c**ut **q**uantization algorithm.
 
+
+### Example
 <img src="examples/test_images/zebra.jpg" alt="drawing" width="648"/>
 
 ![color1](https://via.placeholder.com/72/7E8565/7E8565?text=+)
@@ -17,17 +19,17 @@ Easily extract the color palette from an image!
 
 
 # Credits
-This Rust implementation of MMCQ is adapted from Kazuki Ohara's [ColorThiefSwift](https://github.com/yamoridon/ColorThiefSwift).
+This Rust implementation of **m**odified **m**edian **c**ut **q**uantization (MMCQ) is adapted from Kazuki Ohara's [ColorThiefSwift](https://github.com/yamoridon/ColorThiefSwift).
 
 ## Special thanks
 - Sven Woltmann - for the [Java Implementation](https://github.com/SvenWoltmann/color-thief-java). ColorThiefSwift is a port of this.
-- Lokesh Dhakar - for the [JavaScript version](https://github.com/lokesh/color-thief).
-- And of course, [Dan Bloomberg](https://github.com/DanBloomberg), for the [original paper on MMCQ](http://leptonica.org/papers/mediancut.pdf), and the [reference implementation](https://github.com/DanBloomberg/leptonica/blob/master/src/colorquant2.c), found in [Leptonica](https://github.com/DanBloomberg/leptonica).
+- Lokesh Dhakar - for the [JavaScript version](https://github.com/lokesh/color-thief) of Color Thief which inspired many of the ports.
+- And of course, [Dan Bloomberg](https://github.com/DanBloomberg) for the [original paper on MMCQ](http://leptonica.org/papers/mediancut.pdf), along with the [reference implementation](https://github.com/DanBloomberg/leptonica/blob/master/src/colorquant2.c) found in [Leptonica](https://github.com/DanBloomberg/leptonica).
 
 # Installation
 To use, add the following to `Cargo.toml` under `[dependencies]`:
 ```toml
-mmcq = "0.1.0"
+palette_extract = "0.1.0"
 ```
 
 # Usage
@@ -36,7 +38,7 @@ Using the library consists of calling `get_palette_rgb` or `get_palette_with_opt
 ## Basic
 A minimal example using 4 red pixels represented in RGB looks like this:
 ```rust
-use mmcq::{get_palette_rgb, Color};
+use palette_extract::{get_palette_rgb, Color};
 
 fn main() {
     let pixels: [u8; 12] = [255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0];

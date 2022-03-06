@@ -1,11 +1,11 @@
 [package]
-name = "mmcq"
+name = "palette_extract"
 authors = ["Drew Gerber"]
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
 readme = "README.md"
-keywords = ["mmcq", "color", "quantization", "image", "dithering"]
+keywords = ["mmcq", "color", "quantization", "image", "palette"]
 description = "A Rust port of Leptonica's modified media cut quantization algorithm"
 repository = "https://github.com/DigitalZebra/rust-mmcq.git"
 homepage = "https://github.com/DigitalZebra/rust-mmcq"

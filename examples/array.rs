@@ -1,4 +1,4 @@
-use mmcq::{get_palette_rgb, Color};
+use palette_extract::{get_palette_rgb, Color};
 
 fn main() {
     let pixels: [u8; 12] = [255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0];

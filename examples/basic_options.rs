@@ -1,5 +1,5 @@
 use image::ImageBuffer;
-use mmcq::{get_palette_with_options, MaxColors, PixelEncoding, PixelFilter, Quality};
+use palette_extract::{get_palette_with_options, MaxColors, PixelEncoding, PixelFilter, Quality};
 
 fn main() {
     let image_dimension = 16;

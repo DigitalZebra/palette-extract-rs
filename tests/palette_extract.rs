@@ -16,7 +16,7 @@ fn create_image(img_size: u32, get_pixel: fn(u32, u32) -> (u8, u8, u8)) -> Vec<u
 #[cfg(test)]
 mod get_palette_with_options {
     use super::create_image;
-    use mmcq::{get_palette_with_options, Color, MaxColors, PixelEncoding, PixelFilter, Quality};
+    use palette_extract::{get_palette_with_options, Color, MaxColors, PixelEncoding, PixelFilter, Quality};
 
     #[test]
     fn minimal_rgba() {
@@ -96,7 +96,7 @@ mod get_palette_with_options {
 #[cfg(test)]
 mod get_palette_rgb {
     use super::create_image;
-    use mmcq::{get_palette_rgb, Color};
+    use palette_extract::{get_palette_rgb, Color};
 
     #[test]
     fn red() {

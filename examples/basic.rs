@@ -1,5 +1,5 @@
 use image::ImageBuffer;
-use mmcq::get_palette_rgb;
+use palette_extract::get_palette_rgb;
 
 fn main() {
     let image_dimension = 16;
