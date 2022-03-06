@@ -2,9 +2,9 @@ use palette_extract::{get_palette_with_options, MaxColors, PixelEncoding, PixelF
 
 fn main() {
     
-    let tree_star = "./examples/test_images/tree_star.jpg";
-    let leaf = "./examples/test_images/leaf.jpg";
-    let sunset = "./examples/test_images/sunset.jpg";
+    let _tree_star = "./examples/test_images/tree_star.jpg";
+    let _leaf = "./examples/test_images/leaf.jpg";
+    let _sunset = "./examples/test_images/sunset.jpg";
     let zebra = "./examples/test_images/zebra.jpg";
 
     let img = image::open(zebra).unwrap();

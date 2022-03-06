@@ -1,9 +1,15 @@
 use std::fmt::{Debug, Display};
 
+/// A struct representing a color - the output of the palette extraction.
 #[derive(Copy, Clone, PartialEq)]
 pub struct Color {
+    /// The red color channel.
     pub r: u8,
+    
+    /// The green color channel.
     pub g: u8,
+
+    /// The blue color channel.
     pub b: u8,
 }
 
@@ -22,6 +28,16 @@ impl Debug for Color {
 }
 
 impl Color {
+
+    /// Creates a new Color struct.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use palette_extract::Color;
+    ///
+    /// Color::new(255, 255, 255);
+    /// ```
     pub fn new(r: u8, g: u8, b: u8) -> Color {
         Color { r, g, b }
     }
