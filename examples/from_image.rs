@@ -5,15 +5,16 @@ fn main() {
     let tree_star = "./examples/test_images/tree_star.jpg";
     let leaf = "./examples/test_images/leaf.jpg";
     let sunset = "./examples/test_images/sunset.jpg";
+    let zebra = "./examples/test_images/zebra.jpg";
 
-    let img = image::open(tree_star).unwrap();
+    let img = image::open(zebra).unwrap();
     let pixels = img.as_bytes();
 
     let res = get_palette_with_options(
         &pixels,
         PixelEncoding::Rgb,
         Quality::new(1),
-        MaxColors::new(6),
+        MaxColors::new(10),
         PixelFilter::None,
     );
 

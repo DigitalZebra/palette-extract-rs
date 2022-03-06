@@ -107,4 +107,14 @@ mod get_palette_rgb {
         assert_eq!(result[0], Color::new(252, 4, 4));
         assert_eq!(result.len(), 9);
     }
+
+    #[test]
+    fn minimal_red() {
+        let pixels = [255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0];
+
+        let r = get_palette_rgb(&pixels);
+
+        assert_eq!(r.len(), 1);
+        assert_eq!(r[0], Color::new(252, 4, 4));
+    }
 }
